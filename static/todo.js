@@ -170,6 +170,9 @@ var bindEventAdd = function() {
             return
         }
         var task = inputNew.value
+        if (task == '') {
+            return 
+        }
         var form = {
             name : nameValue,
             task : task,
